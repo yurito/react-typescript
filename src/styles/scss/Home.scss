@@ -1,5 +1,9 @@
 @import "./Global.scss";
 
+.no-space-section{
+  padding: 0;
+}
+
 .welcome {
   background-color: #000;
   color: #fff;
@@ -15,14 +19,12 @@
     bottom: 0;
     overflow: hidden;
     opacity: 0;
-    -webkit-animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s
-      forwards 1;
+    -webkit-animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s forwards 1;
     animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s forwards 1;
   }
   .infos {
     opacity: 0;
-    -webkit-animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s
-      forwards 1;
+    -webkit-animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s forwards 1;
     animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s forwards 1;
     .number {
       position: absolute;
@@ -46,9 +48,15 @@
   }
 
   .who-am-i {
-     display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
     text-align: center;
-    padding-top: 10%;
+    align-content: center;
+
     .main-name {
       font-family: "Comfortaa";
       font-size: 62px;

@@ -21,7 +21,6 @@ const style = {
 // ORIGINAL https://github.com/PavelDoGreat/WebGL-Fluid-Simulation
 
 const FluidSimulation = ( props) =>{
-  console.log(props.children)
   const container = useRef()
   const { width } = useMeasure(container)
 
@@ -32,7 +31,7 @@ const FluidSimulation = ( props) =>{
           <Canvas
             webgl2
             width={width}
-            height={width}
+            height={window.innerHeight-4}
             canvasStyle={style}
             contextAttrs={attrs}
           >

@@ -120,12 +120,12 @@ export default function usePointers() {
       }
     }
 
-    canvas.addEventListener('mousemove', onMouseMove)
-    canvas.addEventListener('touchmove', onTouchMove, false)
-    canvas.addEventListener('mousedown', onMouseDown)
-    canvas.addEventListener('touchstart', onTouchStart)
-    window.addEventListener('mouseup', onMouseUp)
-    window.addEventListener('touchend', onTouchEnd)
+    // canvas.addEventListener('mousemove', onMouseMove)
+    // canvas.addEventListener('touchmove', onTouchMove, false)
+    // canvas.addEventListener('mousedown', onMouseDown)
+    // canvas.addEventListener('touchstart', onTouchStart)
+    // window.addEventListener('mouseup', onMouseUp)
+    // window.addEventListener('touchend', onTouchEnd)
 
     return () => {
       canvas.removeEventListener('mousemove', onMouseMove)

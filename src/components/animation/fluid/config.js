@@ -1,6 +1,6 @@
 export const SIM_RESOLUTION = 128
-export const DYE_RESOLUTION = 512
-export const DENSITY_DISSIPATION = 0.97
+export const DYE_RESOLUTION = 720
+export const DENSITY_DISSIPATION = 0.98
 export const VELOCITY_DISSIPATION = 0.98
 export const PRESSURE_DISSIPATION = 0.8
 export const PRESSURE_ITERATIONS = 20

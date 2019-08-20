@@ -1,18 +1,27 @@
-@import url("http://fonts.googleapis.com/css?family=Open Sans");
-@import url("http://fonts.googleapis.com/css?family=Chivo");
-@import url("http://fonts.googleapis.com/css?family=Comfortaa");
-section:first-of-type:not(.full) {
-  padding-top: 15%; }
-
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+@import url("https://fonts.googleapis.com/css?family=Chivo");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 section {
   position: relative;
   padding: 10%; }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
   display: block; }
 
 main {
   position: relative; }
+
+.no-space-section {
+  padding: 0; }
 
 .welcome {
   background-color: #000;
@@ -51,9 +60,14 @@ main {
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg); }
   .welcome .who-am-i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: grid;
     text-align: center;
-    padding-top: 10%; }
+    align-content: center; }
     .welcome .who-am-i .main-name {
       font-family: "Comfortaa";
       font-size: 62px;
