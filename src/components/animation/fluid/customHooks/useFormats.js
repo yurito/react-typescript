@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import { useMemo } from 'react'
 import { useWebGLVersion } from '@react-vertex/core'
 

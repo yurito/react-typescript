@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import { useEffect, useMemo } from 'react'
 import { timer } from 'd3-timer'
 import { useCanvas } from '@react-vertex/core'

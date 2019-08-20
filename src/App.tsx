@@ -17,7 +17,6 @@ const App: React.FC = () => {
           </Slide>
         </div>
         <FluidSimulation />
-
       </section>
     </main>
   );
