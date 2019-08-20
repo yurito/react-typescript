@@ -46,8 +46,7 @@ export default function usePointers() {
 
       x -= canvas.offsetLeft
       y -= canvas.offsetTop
-
-      pointers[0].moved = pointers[0].down
+       pointers[0].moved = e.returnValue
       pointers[0].dx = (x - pointers[0].x) * 5.0
       pointers[0].dy = (y - pointers[0].y) * 5.0
       pointers[0].x = x
@@ -61,7 +60,7 @@ export default function usePointers() {
 
       for (let i = 0; i < touches.length; i++) {
         const pointer = pointers[i]
-        pointer.moved = pointer.down
+        pointer.moved = true 
 
         let x = touches[i].pageX
         let y = touches[i].pageY
@@ -121,12 +120,17 @@ export default function usePointers() {
       }
     }
 
-    // canvas.addEventListener('mousemove', onMouseMove)
-    // canvas.addEventListener('touchmove', onTouchMove, false)
+    canvas.addEventListener('mousemove', onMouseMove)
+    window.addEventListener('mousemove', onMouseMove)
+    canvas.addEventListener('touchmove', onTouchMove, false)
+    window.addEventListener('touchmove', onTouchMove, false)
+
     // canvas.addEventListener('mousedown', onMouseDown)
-    // canvas.addEventListener('touchstart', onTouchStart)
+    canvas.addEventListener('touchstart', onTouchStart)
+    window.addEventListener('touchstart', onTouchStart)
+
     // window.addEventListener('mouseup', onMouseUp)
-    // window.addEventListener('touchend', onTouchEnd)
+     window.addEventListener('touchend', onTouchEnd)
 
     return () => {
       canvas.removeEventListener('mousemove', onMouseMove)
