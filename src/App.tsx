@@ -13,7 +13,7 @@ const App: React.FC = () => {
             <label className="main-name">Yuri Farias</label>
           </Fade>
           <Slide bottom>
-            <label className="sub-title">Desenvolvedor FullStack</label>
+            <label className="sub-title">Olá, eu crio coisas!</label>
           </Slide>
         </div>
         <FluidSimulation />
