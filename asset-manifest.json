@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ffb31f2.chunk.css",
-    "main.js": "/static/js/main.2f25cde0.chunk.js",
-    "main.js.map": "/static/js/main.2f25cde0.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.6f3e6252.js",
-    "runtime~main.js.map": "/static/js/runtime~main.6f3e6252.js.map",
-    "static/js/2.d55a43ac.chunk.js": "/static/js/2.d55a43ac.chunk.js",
-    "static/js/2.d55a43ac.chunk.js.map": "/static/js/2.d55a43ac.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.20c2b7a66be3be7467a4f71c2adb9017.js": "/precache-manifest.20c2b7a66be3be7467a4f71c2adb9017.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.0ffb31f2.chunk.css.map": "/static/css/main.0ffb31f2.chunk.css.map"
+    "main.css": "/yurito/site/static/css/main.0ffb31f2.chunk.css",
+    "main.js": "/yurito/site/static/js/main.ba3cf038.chunk.js",
+    "main.js.map": "/yurito/site/static/js/main.ba3cf038.chunk.js.map",
+    "runtime~main.js": "/yurito/site/static/js/runtime~main.039df5c7.js",
+    "runtime~main.js.map": "/yurito/site/static/js/runtime~main.039df5c7.js.map",
+    "static/js/2.becea0ee.chunk.js": "/yurito/site/static/js/2.becea0ee.chunk.js",
+    "static/js/2.becea0ee.chunk.js.map": "/yurito/site/static/js/2.becea0ee.chunk.js.map",
+    "index.html": "/yurito/site/index.html",
+    "precache-manifest.83ba371f0c53fad94bd9274c6d3bc646.js": "/yurito/site/precache-manifest.83ba371f0c53fad94bd9274c6d3bc646.js",
+    "service-worker.js": "/yurito/site/service-worker.js",
+    "static/css/main.0ffb31f2.chunk.css.map": "/yurito/site/static/css/main.0ffb31f2.chunk.css.map"
   }
 }
