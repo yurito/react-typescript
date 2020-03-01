@@ -1,5 +1,6 @@
 import React from "react";
 import Tilt from "react-vanilla-tilt";
+import Fade from "react-reveal/Fade";
 
 const Card: React.FC = () => {
   return (
