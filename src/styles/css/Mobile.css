@@ -1,0 +1,9 @@
+/*@@@ iPad, Tablets @@@*/
+/*@@@ iPad, Tablets (small) @@@*/
+/*@@@ Landscape (bigger phones) @@@*/
+/*@@@ Landscape (regular phones) @@@*/
+/*@@@ Portrait (regular phones) @@@*/
+@media only screen and (max-width: 420px) {
+  #services {
+    overflow-x: auto;
+    width: 1250px; } }

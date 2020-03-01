@@ -6,6 +6,10 @@
 @include google-font("Chivo");
 @include google-font("Comfortaa");
 
+body {
+  margin: 0 auto;
+}
+
 section:first-of-type:not(.full) {
   //padding-top: 0%;
 }

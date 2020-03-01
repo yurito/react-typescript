@@ -8,7 +8,7 @@ import "../styles/css/Home.css";
 const Home: React.FC = () => {
   let history = useHistory();
   return (
-    <main onClick={() => history.push("/projetos")}>
+    <main onClick={() => history.push("/servicos")}>
       <section className="welcome no-space-section">
         <div className="who-am-i">
           <Fade top>

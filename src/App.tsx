@@ -4,6 +4,7 @@ import Home from "./views/Home";
 import NoMatchRoute from "views/NoMatchRoute";
 import Services from "views/Services";
 import "./styles/scss/Bootstrap.scss";
+import "./styles/scss/Mobile.scss";
 
 const App: React.FC = () => {
   return (

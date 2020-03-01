@@ -40,7 +40,7 @@ const ItemsCard = props => {
 const Services: React.FC = () => {
   return (
     <main>
-      <section id="Services" className="welcome no-space-section">
+      <section id="services" className="welcome no-space-section">
         <div className="content">
           <div className="all">
             <div className="lefter">
