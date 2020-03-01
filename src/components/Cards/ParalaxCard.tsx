@@ -4,9 +4,19 @@ import Card from "./Card";
 
 const ParalaxCard: React.FC = () => {
   return (
-    <div>
-      <Card name="CORPUS_MAN" />
-      <Card name="CORPUS_WALKER" />
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        height: "100%",
+        justifyContent: "space-around",
+        overflow: "hidden"
+      }}
+    >
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 };
