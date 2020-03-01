@@ -1,13 +1,16 @@
 import React from "react";
 import Tilt from "react-vanilla-tilt";
 import Fade from "react-reveal/Fade";
+import "../../styles/css/Card.css";
 
-const Card: React.FC = () => {
+interface CardProps {
+  name: string;
+}
+
+const Card: React.FC<CardProps> = props => {
   return (
-    <Tilt glare>
-      <div style={{ height: "100%", margin: 0 }}>
-        Lista de projetos vão ser imagens maneiras
-      </div>
+    <Tilt style={{}} className="card-tilt">
+      {props.children} nome {props.name}
     </Tilt>
   );
 };
