@@ -2,12 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./views/Home";
 import NoMatchRoute from "views/NoMatchRoute";
+import Projects from "views/Projects";
 const App: React.FC = () => {
   return (
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path={"/projetos"} component={Home} />
+        <Route path={"/projetos"} component={Projects} />
         <Route>
           <NoMatchRoute />
         </Route>

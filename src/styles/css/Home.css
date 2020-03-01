@@ -67,7 +67,8 @@ main {
     bottom: 0;
     display: grid;
     text-align: center;
-    align-content: center; }
+    align-content: center;
+    justify-content: center; }
     .welcome .who-am-i .main-name {
       font-family: "Comfortaa";
       font-size: 62px;
