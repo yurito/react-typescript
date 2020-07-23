@@ -6,6 +6,18 @@ import Services from "views/Services";
 import "./styles/scss/Bootstrap.scss";
 import "./styles/scss/Mobile.scss";
 
+let isDarkModeAvailable = window.matchMedia("(prefers-color-scheme: dark)")
+  .matches;
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event) => {
+    if (event.matches) {
+      isDarkModeAvailable = true;
+    } else {
+      isDarkModeAvailable = false;
+    }
+  });
 const App: React.FC = () => {
   return (
     <Router>
