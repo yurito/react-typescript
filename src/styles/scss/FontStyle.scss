@@ -1,0 +1,11 @@
+.cmyk {
+    text-shadow: 0.25rem -0.25rem rgba(magenta, 0.75), -0.25rem -0.25rem rgba(cyan, 0.75), 0 0.5rem rgba(yellow, 0.75);
+    transition: 0.5s all ease;
+
+    &:hover {
+        color: #fff;
+        text-shadow: 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 50px #000,
+            0 0 50px #000, 0 0 50px #000, 0 0 50px #000;
+        cursor: pointer;
+    }
+}

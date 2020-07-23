@@ -1,4 +1,7 @@
 @import "./Global.scss";
+@import "./FontStyle.scss";
+@import "./Animation.scss";
+@import "./Buttons.scss";
 
 .no-space-section {
   padding: 0;
@@ -11,48 +14,12 @@
   margin-right: auto;
   margin-left: auto;
 
-  .shaker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    opacity: 0;
-    -webkit-animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s forwards 1;
-    animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s forwards 1;
-  }
-  .infos {
-    opacity: 0;
-    -webkit-animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s forwards 1;
-    animation: show 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1.5s forwards 1;
-    .number {
-      position: absolute;
-      left: 0;
-      right: 0;
-      text-align: center;
-      bottom: 10%;
-      color: #fff;
-      font-size: 0.9375em;
-    }
-    .special-coop {
-      left: 5.5%;
-      -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-      transform: translate(-50%, -50%) rotate(-90deg);
-    }
-  }
-  .t-shirt-print {
-    left: 94.5%;
-    -webkit-transform: translate(-50%, -50%) rotate(90deg);
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
-
   .who-am-i {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 15%;
     display: grid;
     text-align: center;
     align-content: center;

@@ -8,9 +8,9 @@ const App: React.FC = () => {
   return (
     <main>
       <section className="welcome no-space-section">
-      <div className="who-am-i">
+        <div className="who-am-i  ">
           <Fade top>
-            <label className="main-name">Yuri Farias</label>
+            <label className="main-name cmyk">Yuri Farias</label>
           </Fade>
           <Slide bottom>
             <label className="sub-title">Olá, eu crio coisas!</label>
