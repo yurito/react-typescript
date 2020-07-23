@@ -9,8 +9,8 @@ const Home: React.FC = () => {
   let history = useHistory();
   return (
     <main>
-      <section className="welcome no-space-section">
-        <div className="who-am-i">
+      <section className="full-viewport no-space-section">
+        <div className="abs-pos-dsp">
           <Fade top>
             <label
               onClick={() => history.push("/servicos")}

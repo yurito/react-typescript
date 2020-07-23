@@ -103,12 +103,12 @@ a {
   padding: 0;
   overflow: hidden; }
 
-.welcome {
+.full-viewport {
   background-color: #000;
   color: #fff;
   height: 100vh;
   margin: auto; }
-  .welcome .who-am-i {
+  .full-viewport .abs-pos-dsp {
     position: absolute;
     top: 0;
     left: 0;
@@ -119,11 +119,11 @@ a {
     align-content: center;
     justify-content: center;
     user-select: none; }
-    .welcome .who-am-i .main-name {
+    .full-viewport .abs-pos-dsp .main-name {
       font-family: "Comfortaa";
       font-size: 62px;
       font-weight: 300;
       color: #fff; }
-    .welcome .who-am-i .sub-title {
+    .full-viewport .abs-pos-dsp .sub-title {
       font-size: 30px;
       font-weight: 300; }
