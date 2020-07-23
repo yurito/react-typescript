@@ -1,0 +1,72 @@
+// Variables
+$yellow: #add356;
+$teal: #00dfa6;
+$lorange: #ffcb52;
+$dorange: #ff451f;
+$blue: #3dade9;
+$purple: #bf2fcb;
+
+/* Mixins */
+@mixin box-gradient($from, $to, $weight: 0) {
+    $mix-main: mix($from, $to);
+    $mix-sub-from: mix($mix-main, $from);
+    $mix-sub-to: mix($mix-main, $to);
+    box-shadow: -1px 0 0 $weight rgba($from, 0.75), -1px -1px 0 $weight rgba($mix-sub-from, 0.25),
+        // bottom left - mix of two colors plus start
+            -1px 1px 0 $weight rgba($mix-sub-from, 0.25),
+        // top mid - mix of two colors
+            0 -1px 0 $weight rgba($mix-main, 0.5),
+        // bottom mid - mix of two colors
+            0 1px 0 $weight rgba($mix-main, 0.5),
+        // top right - mix of two colors plus end
+            1px -1px 0 $weight rgba($mix-sub-to, 0.25),
+        // bottom right - mix of two colors plus end
+            1px 1px 0 $weight rgba($mix-sub-to, 0.25),
+        // right - end color
+            1px 0 0 $weight rgba($to, 0.75);
+}
+
+@mixin font-gradient($from, $to, $dir) {
+    background: linear-gradient($dir, $from, $to);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    max-width: 400px;
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    bottom: 0%;
+    margin: 0 0.1em;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: 400;
+    text-align: center;
+}
+.green span {
+    @include font-gradient($yellow, $teal, to right);
+}
+.orange span {
+    @include font-gradient($lorange, $dorange, to right);
+}
+.blue span {
+    @include font-gradient($blue, $purple, to right);
+}
+
+.blue {
+    padding: 0.75em;
+    font-size: 3em;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+/* Gradient & Border Technique */
+.border {
+    .blue {
+        //@include border-gradient(to right, $blue, $purple, 2px);
+        @include box-gradient($blue, $purple, 1px);
+    }
+}

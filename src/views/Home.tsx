@@ -8,11 +8,16 @@ import "../styles/css/Home.css";
 const Home: React.FC = () => {
   let history = useHistory();
   return (
-    <main onClick={() => history.push("/servicos")}>
+    <main>
       <section className="welcome no-space-section">
         <div className="who-am-i">
           <Fade top>
-            <label className="main-name">Yuri Farias</label>
+            <label
+              onClick={() => history.push("/servicos")}
+              className="main-name cmyk"
+            >
+              Yuri Farias
+            </label>
           </Fade>
           <Slide bottom>
             <label className="sub-title">Olá, eu crio coisas!</label>

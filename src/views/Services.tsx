@@ -2,30 +2,33 @@ import React from "react";
 import "../styles/css/Projects.css";
 import Card from "components/Cards/Card";
 
+// eslint-disable-next-line
 const itemsMenu = [
   {
-    name: "Projeto Britiney"
+    name: "Projeto Britiney",
   },
   {
-    name: ""
+    name: "",
   },
   {
-    name: ""
+    name: "",
   },
   {
-    name: ""
-  }
+    name: "",
+  },
 ];
 
-const ItemsCard = props => {
+// eslint-disable-next-line
+const ItemsCard = (props) => {
   return (
     <div className="row">
-      {props.items.map(card => {
+      {props.items.map((card) => {
         return (
           <div className="col-lg col-limit">
             <Card name={card.name}>
               <div> algo grande</div>Muitas coisas desse projeto
               <img
+                alt=""
                 width={300}
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/39255/Vela-Stephen.jpg"
               />

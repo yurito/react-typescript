@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open Sans");
 @import url("https://fonts.googleapis.com/css?family=Chivo");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-body {
-  margin: 0 auto; }
-
 section {
   position: relative;
   padding: 10%; }
@@ -23,6 +20,85 @@ section {
 main {
   position: relative; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.cmyk {
+  text-shadow: 0.25rem -0.25rem rgba(255, 0, 255, 0.75), -0.25rem -0.25rem rgba(0, 255, 255, 0.75), 0 0.5rem rgba(255, 255, 0, 0.75);
+  transition: 0.5s all ease; }
+  .cmyk:hover {
+    color: #fff;
+    text-shadow: 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 50px #000, 0 0 50px #000, 0 0 50px #000, 0 0 50px #000;
+    cursor: pointer; }
+
+/* Gradient border animated */
+.gradient-border-animated {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth); }
+  .gradient-border-animated:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%; }
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+/* Mixins */
+.btn {
+  max-width: 400px;
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 0%;
+  margin: 0 0.1em;
+  background: transparent;
+  border-radius: 6px;
+  font-weight: 400;
+  text-align: center; }
+
+.green span {
+  background: linear-gradient(to right, #add356, #00dfa6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.orange span {
+  background: linear-gradient(to right, #ffcb52, #ff451f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.blue span {
+  background: linear-gradient(to right, #3dade9, #bf2fcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.blue {
+  padding: 0.75em;
+  font-size: 3em;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 1px; }
+
+/* Gradient & Border Technique */
+.border .blue {
+  box-shadow: -1px 0 0 1px rgba(61, 173, 233, 0.75), -1px -1px 0 1px rgba(94, 142, 226, 0.25), -1px 1px 0 1px rgba(94, 142, 226, 0.25), 0 -1px 0 1px rgba(126, 110, 218, 0.5), 0 1px 0 1px rgba(126, 110, 218, 0.5), 1px -1px 0 1px rgba(159, 79, 211, 0.25), 1px 1px 0 1px rgba(159, 79, 211, 0.25), 1px 0 0 1px rgba(191, 47, 203, 0.75); }
+
 .no-space-section {
   padding: 0;
   overflow: hidden; }
@@ -37,11 +113,12 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 15%;
     display: grid;
     text-align: center;
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    user-select: none; }
     .welcome .who-am-i .main-name {
       font-family: "Comfortaa";
       font-size: 62px;

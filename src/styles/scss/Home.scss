@@ -1,4 +1,7 @@
 @import "./Global.scss";
+@import "./FontStyle.scss";
+@import "./Animation.scss";
+@import "./Buttons.scss";
 
 .no-space-section {
   padding: 0;
@@ -16,11 +19,12 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 15%;
     display: grid;
     text-align: center;
     align-content: center;
     justify-content: center;
+    user-select: none;
 
     .main-name {
       font-family: "Comfortaa";

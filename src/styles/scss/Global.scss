@@ -6,13 +6,6 @@
 @include google-font("Chivo");
 @include google-font("Comfortaa");
 
-body {
-  margin: 0 auto;
-}
-
-section:first-of-type:not(.full) {
-  //padding-top: 0%;
-}
 section {
   position: relative;
   padding: 10%;
@@ -32,4 +25,9 @@ section {
 
 main {
   position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
