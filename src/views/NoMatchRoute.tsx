@@ -10,7 +10,7 @@ const NoMatchRoute: React.FC = () => {
       <section className="title-screen-containter no-space-section">
         <div className="abs-pos-dsp">
           <Fade top>
-            <label className="main-name">Nada encontrado aqui </label>
+            <label className="main-name">Nada foi encontrado aqui </label>
           </Fade>
         </div>
       </section>
