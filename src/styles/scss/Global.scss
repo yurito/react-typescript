@@ -31,3 +31,19 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@mixin light-theme {
+  background: white;
+  color: black;
+}
+
+@mixin dark-theme {
+  background: black;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  .theme {
+    @include light-theme();
+  }
+}

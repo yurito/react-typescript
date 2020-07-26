@@ -1,0 +1,9 @@
+/* Yurito Gods theme for the win with love and care */
+.themed {
+  background: black;
+  color: white; }
+
+@media (prefers-color-scheme: light) {
+  .themed {
+    background: white;
+    color: black; } }

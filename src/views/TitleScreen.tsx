@@ -4,10 +4,7 @@ import Slide from "react-reveal/Slide";
 import { useHistory } from "react-router-dom";
 import FluidSimulation from "../components/animation/fluid/index";
 import "../styles/css/Home.css";
-
-type AppConfig = {
-  theme: String;
-};
+import { AppConfig } from "../types/AppConfig";
 
 const Home: React.FC<AppConfig> = ({ theme }) => {
   let history = useHistory();

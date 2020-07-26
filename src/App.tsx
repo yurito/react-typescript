@@ -5,10 +5,7 @@ import NoMatchRoute from "views/NoMatchRoute";
 import Services from "views/Services";
 import "./styles/scss/Bootstrap.scss";
 import "./styles/scss/Mobile.scss";
-
-type AppConfig = {
-  theme: String;
-};
+import { AppConfig } from "./types/AppConfig";
 
 export class App extends Component<{}, AppConfig> {
   setTheme(themeName: String = "") {
@@ -25,6 +22,15 @@ export class App extends Component<{}, AppConfig> {
   }
   componentWillMount() {
     this.getSystemTheme();
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        if (event.matches) {
+          this.setTheme("dark");
+        } else {
+          this.setTheme("light");
+        }
+      });
   }
 
   render() {

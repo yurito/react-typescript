@@ -1,6 +1,19 @@
+/* Yurito Gods theme for the win with love and care */
 @import url("https://fonts.googleapis.com/css?family=Open Sans");
 @import url("https://fonts.googleapis.com/css?family=Chivo");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+@import url("https://fonts.googleapis.com/css?family=Chivo");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+.themed {
+  background: black;
+  color: white; }
+
+@media (prefers-color-scheme: light) {
+  .themed {
+    background: white;
+    color: black; } }
+
 section {
   position: relative;
   padding: 10%; }
@@ -128,18 +141,47 @@ a {
       font-size: 30px;
       font-weight: 300; }
 
+/* Yurito Gods theme for the win with love and care */
+.themed {
+  background: black;
+  color: white; }
+
+@media (prefers-color-scheme: light) {
+  .themed {
+    background: white;
+    color: black; } }
+
+section {
+  position: relative;
+  padding: 10%; }
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+main {
+  position: relative; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 .content {
   font-family: "Comfortaa", sans-serif;
-  background-image: radial-gradient(circle at center, #899dc4, #495d84);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
   font-size: 0.82rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #eee linear-gradient(135deg, #2980b9, #9b59b6);
   font-weight: 300; }
 
 .all {
