@@ -5,8 +5,7 @@
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.17",
-    "@types/node": "12.7.2",
-    "@types/react": "^16.9.2",
+    "@types/node": "^12.7.2",
     "@types/react-dom": "16.8.5",
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
@@ -49,12 +48,12 @@
     "@react-vertex/core": "^2.9.0",
     "@react-vertex/dom-hooks": "^1.11.0",
     "@types/node-sass": "^4.11.0",
+    "@types/react": "^16.9.43",
     "d3-timer": "^1.0.9",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.3",
     "react-reveal": "^1.2.2",
-    "react-scripts": "^3.1.0",
     "react-vertex": "^2.0.0"
   }
 }

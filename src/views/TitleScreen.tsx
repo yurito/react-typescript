@@ -5,7 +5,11 @@ import { useHistory } from "react-router-dom";
 import FluidSimulation from "../components/animation/fluid/index";
 import "../styles/css/Home.css";
 
-const Home: React.FC = () => {
+type AppConfig = {
+  theme: String;
+};
+
+const Home: React.FC<AppConfig> = ({ theme }) => {
   let history = useHistory();
   return (
     <main>
@@ -16,7 +20,7 @@ const Home: React.FC = () => {
               onClick={() => history.push("/servicos")}
               className="main-name cmyk"
             >
-              Yuri Farias
+              Yuri Farias - {theme}
             </label>
           </Fade>
           <Slide bottom>
