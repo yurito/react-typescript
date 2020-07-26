@@ -25,6 +25,15 @@ a {
   text-decoration: none; }
 
 @media (prefers-color-scheme: light) {
-  .theme {
-    background: white;
-    color: black; } }
+  .title-screen-containter {
+    background: #fafafa;
+    color: black; }
+    .title-screen-containter label {
+      color: black; } }
+
+@media (prefers-color-scheme: dark) {
+  .title-screen-containter {
+    background: black;
+    color: white; }
+    .title-screen-containter label {
+      color: white; } }

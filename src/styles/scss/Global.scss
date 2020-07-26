@@ -33,17 +33,30 @@ a {
 }
 
 @mixin light-theme {
-  background: white;
+  background: #fafafa;
   color: black;
+
+  label {
+    color: black;
+  }
 }
 
 @mixin dark-theme {
   background: black;
   color: white;
+
+  label {
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-  .theme {
+  .title-screen-containter {
     @include light-theme();
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .title-screen-containter {
+    @include dark-theme();
   }
 }

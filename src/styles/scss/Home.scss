@@ -8,9 +8,7 @@
   overflow: hidden;
 }
 
-.full-viewport {
-  background-color: #000;
-  color: #fff;
+.title-screen-containter {
   height: 100vh;
   margin: auto;
 
@@ -28,12 +26,11 @@
 
     .main-name {
       font-family: "Comfortaa";
-      font-size: 62px;
+      font-size: 3.7rem;
       font-weight: 300;
-      color: #fff;
     }
     .sub-title {
-      font-size: 30px;
+      font-size: 1.3rem;
       font-weight: 300;
     }
   }

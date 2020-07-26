@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/css/Projects.css";
 import Card from "components/Cards/Card";
 
 // eslint-disable-next-line
@@ -43,7 +42,10 @@ const ItemsCard = (props) => {
 const Services: React.FC = () => {
   return (
     <main>
-      <section id="services" className="full-viewport no-space-section themed">
+      <section
+        id="services"
+        className="title-screen-containter no-space-section themed"
+      >
         <div className="content">
           <div className="all">
             <div className="lefter">

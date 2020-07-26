@@ -12,9 +12,11 @@ import {
   useResolution,
 } from "./customHooks";
 
-const backColor = convertHex("#000000");
+function Simulation({ theme }) {
+  let backColor = {
+    bg: theme === "dark" ? convertHex("#000000") : convertHex("#ffffff"),
+  };
 
-function Simulation() {
   const { width, clientWidth, height, clientHeight } = useCanvasSize();
 
   const gl = useWebGLContext();
@@ -29,6 +31,7 @@ function Simulation() {
   const framebuffers = useFramebuffers(gl, dyeSize, simSize, formats);
 
   useEffect(() => {
+    const { bg } = backColor;
     const {
       advection,
       background,
@@ -201,7 +204,7 @@ function Simulation() {
 
       if (!config.TRANSPARENT) {
         gl.useProgram(color.program);
-        gl.uniform4f(color.uniforms.color, ...backColor);
+        gl.uniform4f(color.uniforms.color, ...bg);
         renderToBuffer(target);
       }
 
@@ -281,6 +284,7 @@ function Simulation() {
     height,
     clientHeight,
     programs,
+    backColor,
     framebuffers,
   ]);
 

@@ -10,21 +10,21 @@ const Home: React.FC<AppConfig> = ({ theme }) => {
   let history = useHistory();
   return (
     <main>
-      <section className="full-viewport no-space-section">
+      <section className="title-screen-containter no-space-section">
         <div className="abs-pos-dsp">
           <Fade top>
             <label
-              onClick={() => history.push("/servicos")}
+              onClick={() => /*history.push("/servicos")*/ {}}
               className="main-name cmyk"
             >
-              Yuri Farias - {theme}
+              Yuri Farias
             </label>
           </Fade>
           <Slide bottom>
             <label className="sub-title">Olá, eu crio coisas!</label>
           </Slide>
         </div>
-        <FluidSimulation />
+        <FluidSimulation theme={theme} />
       </section>
     </main>
   );
