@@ -35,7 +35,7 @@ export class App extends Component<{}, AppConfig> {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact>
             <TitleScreen theme={this.state.theme} />
