@@ -44,7 +44,7 @@ const Services: React.FC = () => {
     <main>
       <section
         id="services"
-        className="title-screen-containter no-space-section themed"
+        className=" screen-containter no-space-section themed"
       >
         <div className="content">
           <div className="all">

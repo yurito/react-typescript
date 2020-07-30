@@ -3,19 +3,22 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import { useHistory } from "react-router-dom";
 import FluidSimulation from "../components/animation/fluid/index";
-import "../styles/css/Home.css";
+import "../styles/css/TitleScreen.css";
 import { AppConfig } from "../types/AppConfig";
 
-//              onClick={() => /*history.push("/servicos")*/ {}}
-
-const Home: React.FC<AppConfig> = ({ theme }) => {
+const TitleScreen: React.FC<AppConfig> = ({ theme }) => {
   let history = useHistory();
   return (
     <main>
-      <section className="title-screen-containter no-space-section">
-        <div className="abs-pos-dsp">
+      <section className=" screen-containter no-space-section">
+        <div className="absolute-position-display">
           <Fade top>
-            <label className="main-name cmyk">Yuri Farias</label>
+            <label
+              className="main-name cmyk"
+              onClick={() => history.push("/home")}
+            >
+              Yuri Farias
+            </label>
           </Fade>
           <Slide bottom>
             <label className="sub-title">Olá, eu crio coisas!</label>
@@ -27,4 +30,4 @@ const Home: React.FC<AppConfig> = ({ theme }) => {
   );
 };
 
-export default Home;
+export default TitleScreen;

@@ -1,37 +1,188 @@
 @import "./Global.scss";
-@import "./FontStyle.scss";
-@import "./Animation.scss";
-@import "./Buttons.scss";
 
-.no-space-section {
-  padding: 0;
-  overflow: hidden;
+.home-landing {
+    font-family: "Chivo", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    .container-home {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .home-details {
+        > div {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 45px;
+            line-height: 45px;
+            font-weight: 700;
+            margin: 18px 0 10px;
+            span {
+                font-weight: 600;
+            }
+        }
+        h6 {
+            font-size: 22px;
+            font-weight: 400;
+            display: block;
+        }
+        p {
+            margin: 10px 0 23px;
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
 }
 
-.title-screen-containter {
-  height: 100vh;
-  margin: auto;
-
-  .abs-pos-dsp {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 15%;
-    display: grid;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    user-select: none;
-
-    .main-name {
-      font-family: "Comfortaa";
-      font-size: 3.7rem;
-      font-weight: 300;
+@media (min-width: 992px) {
+    .home-landing {
+        .home-details-container {
+            width: 100%;
+            height: 100%;
+        }
     }
-    .sub-title {
-      font-size: 1.3rem;
-      font-weight: 300;
+    main.home-landing {
+        overflow: hidden;
     }
-  }
+    .btn {
+        &:before {
+            font: 15px/1.2em FontAwesome;
+            color: #fff;
+            position: absolute;
+            height: 100%;
+            right: 25px;
+            top: 50%;
+            margin-top: -9px;
+            transition: all 0.3s;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+        }
+        span {
+            position: relative;
+            display: block;
+            transition: all 0.3s;
+        }
+        &:hover {
+            span {
+                -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+            }
+            &:before {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+    }
+    .btn.btn-about {
+        &:before {
+            content: "\f007";
+        }
+    }
+}
+@media (max-width: 991px) {
+    .btn {
+        padding: 0 28px;
+    }
+    .home-landing {
+        padding: 25px;
+        .main-container {
+            padding: 30px 0 !important;
+        }
+    }
+    .home-landing {
+        .home-details-container {
+            margin: 0 auto;
+        }
+        .home-details {
+            padding: 0;
+            h1 {
+                font-size: 38px;
+                line-height: 38px;
+                margin: 29px 0 13px;
+            }
+            p {
+                margin: 10px 0 23px;
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+    }
+    .main-img-mobile {
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+        border: 4px solid #252525;
+        margin: 0 auto 25px;
+        display: block;
+    }
+}
+@media (max-width: 576px) {
+    .btn {
+        font-size: 14px;
+    }
+
+    .home {
+        .home-details {
+            h1 {
+                font-size: 29px;
+                line-height: 29px;
+                margin: 18px 0 13px;
+            }
+            h6 {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .main-content {
+        padding-top: 85px;
+        > .container {
+            padding: 0 25px;
+        }
+    }
+    .main-img-mobile {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 992px) {
+    .home {
+        .home-details {
+            > div {
+                max-width: 450px;
+            }
+        }
+    }
+}
+@media (min-width: 1600px) {
+    .home {
+        .home-details {
+            > div {
+                max-width: 600px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .home {
+        .home-details {
+            p {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+    }
 }

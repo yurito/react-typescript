@@ -6613,3 +6613,37 @@ a {
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto; } }
+
+.cmyk {
+  text-shadow: 0.25rem -0.25rem rgba(255, 0, 255, 0.75), -0.25rem -0.25rem rgba(0, 255, 255, 0.75), 0 0.5rem rgba(255, 255, 0, 0.75);
+  transition: 0.5s all ease; }
+  .cmyk:hover {
+    color: #fff;
+    text-shadow: 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 100px #666, 0 0 50px #000, 0 0 50px #000, 0 0 50px #000, 0 0 50px #000;
+    cursor: pointer; }
+
+.no-space-section {
+  padding: 0;
+  overflow: hidden; }
+
+.screen-containter {
+  height: 100vh;
+  margin: auto; }
+  .screen-containter .absolute-position-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    user-select: none; }
+    .screen-containter .absolute-position-display .main-name {
+      font-family: "Comfortaa";
+      font-size: 3.7rem;
+      font-weight: 300; }
+    .screen-containter .absolute-position-display .sub-title {
+      font-size: 1.3rem;
+      font-weight: 300; }

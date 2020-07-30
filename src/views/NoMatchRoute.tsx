@@ -7,8 +7,8 @@ type TParams = { id: number };
 const NoMatchRoute: React.FC = () => {
   return (
     <main>
-      <section className="title-screen-containter no-space-section">
-        <div className="abs-pos-dsp">
+      <section className=" screen-containter no-space-section">
+        <div className="absolute-position-display">
           <Fade top>
             <label className="main-name">Nada foi encontrado aqui </label>
           </Fade>

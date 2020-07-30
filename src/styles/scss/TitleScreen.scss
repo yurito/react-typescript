@@ -1,0 +1,35 @@
+@import "./Global.scss";
+@import "./FontStyle.scss";
+
+.no-space-section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.screen-containter {
+  height: 100vh;
+  margin: auto;
+
+  .absolute-position-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    user-select: none;
+
+    .main-name {
+      font-family: "Comfortaa";
+      font-size: 3.7rem;
+      font-weight: 300;
+    }
+    .sub-title {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+}

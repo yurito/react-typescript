@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TitleScreen from "./views/TitleScreen";
 import NoMatchRoute from "views/NoMatchRoute";
+import HomeScreen from "./views/HomeScreen";
 import Services from "views/Services";
 import "./styles/scss/Bootstrap.scss";
 import "./styles/scss/Mobile.scss";
@@ -41,6 +42,9 @@ export class App extends Component<{}, AppConfig> {
             <TitleScreen theme={this.state.theme} />
           </Route>
           <Route path={"/servicos"} component={Services} />
+          <Route path={"/home"}>
+            <HomeScreen theme={this.state.theme} />
+          </Route>
           <Route>
             <NoMatchRoute />
           </Route>

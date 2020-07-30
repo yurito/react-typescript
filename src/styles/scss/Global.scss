@@ -1,3 +1,5 @@
+@import "./Bootstrap.scss";
+
 @mixin google-font($family) {
   @import url("https://fonts.googleapis.com/css?family=#{$family}");
 }
@@ -6,9 +8,33 @@
 @include google-font("Chivo");
 @include google-font("Comfortaa");
 
+$light-font-color: white;
+$light-bg-color: #eae9e9;
+$dark-font-color: black;
+$dark-bg-color: #2a2725;
+$lava-color: #ce1023;
+$pakistan-green: #086422;
+$royal-blue: #012866;
+$selective-yellow: #f9b922;
+$burnt-orange: #c95520;
+
+.chivo-font {
+  font-family: "Chivo", sans-serif;
+}
+
+.chivo-font {
+  font-family: "Comfortaa", sans-serif;
+}
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
 section {
   position: relative;
-  padding: 10%;
+  height: 100%;
 }
 article,
 aside,
@@ -33,30 +59,96 @@ a {
 }
 
 @mixin light-theme {
-  background: #fafafa;
-  color: black;
+  background: $light-bg-color;
+  color: $dark-font-color;
 
-  label {
-    color: black;
+  h1 {
+    span {
+      color: #666;
+      font-weight: 600;
+    }
+  }
+  h6 {
+    color: #777;
+  }
+
+  /* HomeScreen */
+  .color-block {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: 13%;
+    background-color: rebeccapurple;
+  }
+  .bg {
+    background-image: url(../../assets/img/profile1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: calc(100vh - 60px);
+    z-index: 111;
+    border-radius: 15px;
+    left: 30px;
+    top: 30px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
 }
 
 @mixin dark-theme {
-  background: black;
-  color: white;
+  background: $dark-bg-color;
+  color: #d8d8d8;
 
-  label {
-    color: white;
+  h1 {
+    color: $lava-color;
+    span {
+      color: #d8d8d8;
+      font-weight: 600;
+    }
+  }
+  h6 {
+    color: $burnt-orange;
+  }
+
+  /* HomeScreen */
+  .color-block {
+    position: absolute;
+    height: 113%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: 17%;
+    background-color: crimson;
+  }
+  .bg {
+    background-image: url(../../assets/img/profile1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: calc(100vh - 60px);
+    z-index: 111;
+    border-radius: 15px;
+    left: 30px;
+    top: 30px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .title-screen-containter {
+  .screen-containter {
     @include light-theme();
   }
 }
 @media (prefers-color-scheme: dark) {
-  .title-screen-containter {
+  .screen-containter,
+  .page-theme {
     @include dark-theme();
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
