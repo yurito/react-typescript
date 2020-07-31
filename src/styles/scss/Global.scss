@@ -61,6 +61,7 @@ a {
 @mixin light-theme {
   background: $light-bg-color;
   color: $dark-font-color;
+  transition: all 0.5s ease-in-out;
 
   h1 {
     span {
@@ -75,12 +76,12 @@ a {
   /* HomeScreen */
   .color-block {
     position: absolute;
-    height: 100%;
+    height: 113%;
     width: 100%;
     transform: rotate(-15deg);
     left: -83%;
-    top: 13%;
-    background-color: rebeccapurple;
+    top: 17%;
+    background-color: $burnt-orange;
   }
   .bg {
     background-image: url(../../assets/img/profile1.png);
@@ -99,6 +100,7 @@ a {
 @mixin dark-theme {
   background: $dark-bg-color;
   color: #d8d8d8;
+  transition: all 0.5s ease-in-out;
 
   h1 {
     color: $lava-color;

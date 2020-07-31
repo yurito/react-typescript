@@ -6546,6 +6546,7 @@ a {
   .screen-containter {
     background: #eae9e9;
     color: black;
+    transition: all 0.5s ease-in-out;
     /* HomeScreen */ }
     .screen-containter h1 span {
       color: #666;
@@ -6554,12 +6555,12 @@ a {
       color: #777; }
     .screen-containter .color-block {
       position: absolute;
-      height: 100%;
+      height: 113%;
       width: 100%;
       transform: rotate(-15deg);
       left: -83%;
-      top: 13%;
-      background-color: rebeccapurple; }
+      top: 17%;
+      background-color: #c95520; }
     .screen-containter .bg {
       background-image: url(../../assets/img/profile1.png);
       background-size: cover;
@@ -6577,6 +6578,7 @@ a {
   .page-theme {
     background: #2a2725;
     color: #d8d8d8;
+    transition: all 0.5s ease-in-out;
     /* HomeScreen */ }
     .screen-containter h1,
     .page-theme h1 {
@@ -6614,6 +6616,171 @@ a {
   html {
     scroll-behavior: auto; } }
 
+/* Gradient border animated */
+.gradient-border-animated {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth); }
+  .gradient-border-animated:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%; }
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@media (prefers-color-scheme: light) {
+  .screen-containter .btn-draw {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: inline-block;
+    color: #c95520;
+    border-bottom: 2px solid #c95520;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+    .screen-containter .btn-draw:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 2px;
+      background: #c95520;
+      transform: translateY(100%);
+      transition: transform 0.2s ease-in-out;
+      transition-delay: 0.6s; }
+    .screen-containter .btn-draw > span {
+      position: relative;
+      display: block;
+      padding: 0.5em;
+      color: inherit; }
+      .screen-containter .btn-draw > span:before, .screen-containter .btn-draw > span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #c95520;
+        transition: transform 0.2s ease-in-out; }
+      .screen-containter .btn-draw > span:before {
+        height: 2px;
+        width: 100%;
+        transform: translateX(100%);
+        transition-delay: 0.4s; }
+      .screen-containter .btn-draw > span:after {
+        height: 100%;
+        width: 2px;
+        transform: translateY(-100%);
+        transition-delay: 0.2s; }
+    .screen-containter .btn-draw:hover:after,
+    .screen-containter .btn-draw:hover > span:before,
+    .screen-containter .btn-draw:hover > span:after {
+      transform: translate(0, 0); }
+    .screen-containter .btn-draw:hover:after {
+      transition-delay: 0s; }
+    .screen-containter .btn-draw:hover > span:before {
+      transition-delay: 0.2s; }
+    .screen-containter .btn-draw:hover > span:after {
+      transition-delay: 0.4s; }
+    .screen-containter .btn-draw:hover {
+      color: #2a2725;
+      font-weight: 700;
+      background-color: #c95520;
+      transition-delay: 0.6s; } }
+
+@media (prefers-color-scheme: dark) {
+  .screen-containter .btn-draw,
+  .page-theme .btn-draw {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: inline-block;
+    color: #ce1023;
+    border-bottom: 2px solid #ce1023;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+    .screen-containter .btn-draw:after,
+    .page-theme .btn-draw:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 2px;
+      background: #ce1023;
+      transform: translateY(100%);
+      transition: transform 0.2s ease-in-out;
+      transition-delay: 0.6s; }
+    .screen-containter .btn-draw > span,
+    .page-theme .btn-draw > span {
+      position: relative;
+      display: block;
+      padding: 0.5em;
+      color: inherit; }
+      .screen-containter .btn-draw > span:before, .screen-containter .btn-draw > span:after,
+      .page-theme .btn-draw > span:before,
+      .page-theme .btn-draw > span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #ce1023;
+        transition: transform 0.2s ease-in-out; }
+      .screen-containter .btn-draw > span:before,
+      .page-theme .btn-draw > span:before {
+        height: 2px;
+        width: 100%;
+        transform: translateX(100%);
+        transition-delay: 0.4s; }
+      .screen-containter .btn-draw > span:after,
+      .page-theme .btn-draw > span:after {
+        height: 100%;
+        width: 2px;
+        transform: translateY(-100%);
+        transition-delay: 0.2s; }
+    .screen-containter .btn-draw:hover:after,
+    .screen-containter .btn-draw:hover > span:before,
+    .screen-containter .btn-draw:hover > span:after,
+    .page-theme .btn-draw:hover:after,
+    .page-theme .btn-draw:hover > span:before,
+    .page-theme .btn-draw:hover > span:after {
+      transform: translate(0, 0); }
+    .screen-containter .btn-draw:hover:after,
+    .page-theme .btn-draw:hover:after {
+      transition-delay: 0s; }
+    .screen-containter .btn-draw:hover > span:before,
+    .page-theme .btn-draw:hover > span:before {
+      transition-delay: 0.2s; }
+    .screen-containter .btn-draw:hover > span:after,
+    .page-theme .btn-draw:hover > span:after {
+      transition-delay: 0.4s; }
+    .screen-containter .btn-draw:hover,
+    .page-theme .btn-draw:hover {
+      color: #eae9e9;
+      font-weight: 700;
+      background-color: #ce1023;
+      transition-delay: 0.6s; } }
+
 .home-landing {
   font-family: "Chivo", sans-serif;
   font-size: 15px;
@@ -6649,36 +6816,7 @@ a {
 @media (min-width: 992px) {
   .home-landing .home-details-container {
     width: 100%;
-    height: 100%; }
-  main.home-landing {
-    overflow: hidden; }
-  .btn:before {
-    font: 15px/1.2em FontAwesome;
-    color: #fff;
-    position: absolute;
-    height: 100%;
-    right: 25px;
-    top: 50%;
-    margin-top: -9px;
-    transition: all 0.3s;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px); }
-  .btn span {
-    position: relative;
-    display: block;
-    transition: all 0.3s; }
-  .btn:hover span {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
-  .btn:hover:before {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  .btn.btn-about:before {
-    content: "\f007"; } }
+    height: 100%; } }
 
 @media (max-width: 991px) {
   .btn {
@@ -6708,8 +6846,6 @@ a {
     display: block; } }
 
 @media (max-width: 576px) {
-  .btn {
-    font-size: 14px; }
   .home .home-details h1 {
     font-size: 29px;
     line-height: 29px;

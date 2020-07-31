@@ -6546,6 +6546,7 @@ a {
   .screen-containter {
     background: #eae9e9;
     color: black;
+    transition: all 0.5s ease-in-out;
     /* HomeScreen */ }
     .screen-containter h1 span {
       color: #666;
@@ -6554,12 +6555,12 @@ a {
       color: #777; }
     .screen-containter .color-block {
       position: absolute;
-      height: 100%;
+      height: 113%;
       width: 100%;
       transform: rotate(-15deg);
       left: -83%;
-      top: 13%;
-      background-color: rebeccapurple; }
+      top: 17%;
+      background-color: #c95520; }
     .screen-containter .bg {
       background-image: url(../../assets/img/profile1.png);
       background-size: cover;
@@ -6577,6 +6578,7 @@ a {
   .page-theme {
     background: #2a2725;
     color: #d8d8d8;
+    transition: all 0.5s ease-in-out;
     /* HomeScreen */ }
     .screen-containter h1,
     .page-theme h1 {

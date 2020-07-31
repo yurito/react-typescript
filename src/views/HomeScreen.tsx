@@ -35,20 +35,19 @@ const Home: React.FC<AppConfig> = ({ theme }) => {
                     className="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
                     alt="minha foto"
                   />
-                  <h6 className="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">
-                    hi there !
-                  </h6>
                   <h1 className="text-uppercase poppins-font">
-                    <span>I'm</span> Lucy milner
+                    <span>sobre </span>Mim
                   </h1>
                   <p className="open-sans-font">
-                    I'm a Tunisian based web designer & front‑end developer
-                    focused on crafting clean & user‑friendly experiences, I am
-                    passionate about building excellent software that improves
-                    the lives of those around me.
+                    Desde criança apaixonado por tecnologia, entusiasta e
+                    dedicado. Minha vida profissional iniciou na área de Redes
+                    de Computadores trabalhando com Servidores, Virtualização,
+                    Cloud Computing, Planejamento e Implatação. Pouco tempo
+                    depois migrei para Jogos Digitais, imergindo na area de
+                    desenvolvimento de apps e sites onde me encontro atualmente.
                   </p>
-                  <a href="#section2" className="btn btn-about">
-                    more about me
+                  <a className="btn-draw" href="#section2">
+                    <span>Mais sobre min</span>
                   </a>
                 </div>
               </div>

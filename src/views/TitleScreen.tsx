@@ -5,9 +5,16 @@ import { useHistory } from "react-router-dom";
 import FluidSimulation from "../components/animation/fluid/index";
 import "../styles/css/TitleScreen.css";
 import { AppConfig } from "../types/AppConfig";
+const Typewriter = require("typewriter-effect");
 
 const TitleScreen: React.FC<AppConfig> = ({ theme }) => {
   let history = useHistory();
+  const subTileText = [
+    "Desenvolvimento Miraculoso.",
+    "Desenvolvedor Full Stack.",
+    "UX/UI Designer, Desenvolvedor Front-end e Back-end.",
+    "Localizado em Maceió - Alagoas.",
+  ];
   return (
     <main>
       <section className=" screen-containter no-space-section">
@@ -21,7 +28,17 @@ const TitleScreen: React.FC<AppConfig> = ({ theme }) => {
             </label>
           </Fade>
           <Slide bottom>
-            <label className="sub-title">Olá, eu crio coisas!</label>
+            <Typewriter
+              skipAddStyles
+              wrapperClassName="sub-title"
+              options={{
+                strings: subTileText,
+                autoStart: true,
+                loop: true,
+                delay: 30,
+                deleteSpeed: 25,
+              }}
+            />
           </Slide>
         </div>
         <FluidSimulation theme={theme} />

@@ -1,4 +1,4 @@
-@import "./Global.scss";
+@import "./Animation.scss";
 
 .home-landing {
     font-family: "Chivo", sans-serif;
@@ -49,47 +49,6 @@
             height: 100%;
         }
     }
-    main.home-landing {
-        overflow: hidden;
-    }
-    .btn {
-        &:before {
-            font: 15px/1.2em FontAwesome;
-            color: #fff;
-            position: absolute;
-            height: 100%;
-            right: 25px;
-            top: 50%;
-            margin-top: -9px;
-            transition: all 0.3s;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
-        }
-        span {
-            position: relative;
-            display: block;
-            transition: all 0.3s;
-        }
-        &:hover {
-            span {
-                -webkit-transform: translateX(-10px);
-                transform: translateX(-10px);
-            }
-            &:before {
-                opacity: 1;
-                filter: alpha(opacity=100);
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-            }
-        }
-    }
-    .btn.btn-about {
-        &:before {
-            content: "\f007";
-        }
-    }
 }
 @media (max-width: 991px) {
     .btn {
@@ -129,10 +88,6 @@
     }
 }
 @media (max-width: 576px) {
-    .btn {
-        font-size: 14px;
-    }
-
     .home {
         .home-details {
             h1 {
