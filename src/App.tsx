@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TitleScreen from "./views/TitleScreen";
 import NoMatchRoute from "views/NoMatchRoute";
-import HomeScreen from "./views/HomeScreen";
+import HomeScreen from "./views/Home/HomeScreen";
 import Services from "views/Services";
 import "./styles/scss/Bootstrap.scss";
 import "./styles/scss/Mobile.scss";

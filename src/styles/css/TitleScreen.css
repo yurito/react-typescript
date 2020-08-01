@@ -6543,17 +6543,21 @@ a {
   text-decoration: none; }
 
 @media (prefers-color-scheme: light) {
-  .screen-containter {
+  .screen-containter,
+  .page-theme {
     background: #eae9e9;
     color: black;
     transition: all 0.5s ease-in-out;
     /* HomeScreen */ }
-    .screen-containter h1 span {
+    .screen-containter h1 span,
+    .page-theme h1 span {
       color: #666;
       font-weight: 600; }
-    .screen-containter h6 {
+    .screen-containter h6,
+    .page-theme h6 {
       color: #777; }
-    .screen-containter .color-block {
+    .screen-containter .color-block,
+    .page-theme .color-block {
       position: absolute;
       height: 113%;
       width: 100%;
@@ -6561,7 +6565,8 @@ a {
       left: -83%;
       top: 17%;
       background-color: #c95520; }
-    .screen-containter .bg {
+    .screen-containter .bg,
+    .page-theme .bg {
       background-image: url(../../assets/img/profile1.png);
       background-size: cover;
       background-repeat: no-repeat;

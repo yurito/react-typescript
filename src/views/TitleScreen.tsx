@@ -9,7 +9,7 @@ const Typewriter = require("typewriter-effect");
 
 const TitleScreen: React.FC<AppConfig> = ({ theme }) => {
   let history = useHistory();
-  const subTileText = [
+  const subTitleText = [
     "Desenvolvimento Miraculoso.",
     "Desenvolvedor Full Stack.",
     "UX/UI Designer, Desenvolvedor Front-end e Back-end.",
@@ -32,7 +32,7 @@ const TitleScreen: React.FC<AppConfig> = ({ theme }) => {
               skipAddStyles
               wrapperClassName="sub-title"
               options={{
-                strings: subTileText,
+                strings: subTitleText,
                 autoStart: true,
                 loop: true,
                 delay: 30,

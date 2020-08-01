@@ -4,6 +4,7 @@
   "homepage": "https://yurito.github.com/site/",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.17",
     "@types/jest": "24.0.17",
     "@types/node": "^12.7.2",
     "@types/react-dom": "16.8.5",

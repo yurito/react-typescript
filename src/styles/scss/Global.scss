@@ -138,7 +138,8 @@ a {
 }
 
 @media (prefers-color-scheme: light) {
-  .screen-containter {
+  .screen-containter,
+  .page-theme {
     @include light-theme();
   }
 }
