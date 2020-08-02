@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import "../../styles/css/Home.css";
 import { AppConfig } from "../../types/AppConfig";
@@ -6,19 +6,8 @@ import Slide from "react-reveal/Slide";
 import ReactFullpage from "@fullpage/react-fullpage";
 
 const Home: React.FC<AppConfig> = ({ theme }) => {
-  const history = useHistory();
-
-  const [currentPage, setPage] = useState(0);
-
   // eslint-disable-next-line
-  const handlePageChange = (page) => {
-    setPage(page);
-  };
-
-  useEffect(() => {
-    console.log("o que tem aqui", history.location.hash);
-    console.log("teste pagina count", currentPage);
-  });
+  const history = useHistory();
 
   return (
     <aside className="page-theme">
@@ -29,6 +18,7 @@ const Home: React.FC<AppConfig> = ({ theme }) => {
           percentage: 62,
           property: "translate",
         }}
+        dragAndMove="vertical"
         scrollingSpeed={700}
         render={({ state }) => {
           return (
@@ -48,7 +38,11 @@ const Home: React.FC<AppConfig> = ({ theme }) => {
                       <div className="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
                         <div>
                           <img
-                            src={require("../../assets/img/profile1-mobile-light.png")}
+                            src={
+                              theme === "dark"
+                                ? require("../../assets/img/img-mobile-dark.png")
+                                : require("../../assets/img/img-mobile-light.png")
+                            }
                             className="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
                             alt="minha foto"
                           />
@@ -64,9 +58,6 @@ const Home: React.FC<AppConfig> = ({ theme }) => {
                             Digitais, imergindo na area de desenvolvimento de
                             apps e sites onde me encontro atualmente.
                           </p>
-                          <a className="btn-draw" href="#more-about-me">
-                            <span>Mais sobre min</span>
-                          </a>
                         </div>
                       </div>
                     </div>
