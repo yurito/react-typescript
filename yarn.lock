@@ -900,6 +900,14 @@
     "@babel/helper-create-regexp-features-plugin" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
 
+"@babel/polyfill@^7.2.5":
+  version "7.12.1"
+  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.12.1.tgz#1f2d6371d1261bbd961f3c5d5909150e12d0bd96"
+  integrity sha512-X0pi0V6gxLi6lFZpGmeNa4zxtwEmCs42isWLNjZZDE0Y8yVfgu0T2OAHlzBbdYlqbW/YXVvoBHpATEM+goCj8g==
+  dependencies:
+    core-js "^2.6.5"
+    regenerator-runtime "^0.13.4"
+
 "@babel/preset-env@7.9.0":
   version "7.9.0"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.9.0.tgz#a5fc42480e950ae8f5d9f8f2bbc03f52722df3a8"
@@ -1144,6 +1152,14 @@
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
+
+"@fullpage/react-fullpage@^0.1.17":
+  version "0.1.39"
+  resolved "https://registry.yarnpkg.com/@fullpage/react-fullpage/-/react-fullpage-0.1.39.tgz#f32cbf404bccb8c837e9e7fb68c660256d30e4a8"
+  integrity sha512-JK0YTtOEy6icI8oJ/4Um+rRu3nZEFnh0rmOOMkBN9CGqXzveVIrTOmD/GBIegcXJo6y8Sk6a6EkYjj2ngNuf1Q==
+  dependencies:
+    "@babel/polyfill" "^7.2.5"
+    fullpage.js "^4.0.19"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -1395,7 +1411,7 @@
     physical-cpu-count "^2.0.0"
 
 "@react-vertex/color-hooks@^1.8.0":
-  version "1.7.0"
+  version "1.8.0"
   resolved "https://registry.yarnpkg.com/@react-vertex/color-hooks/-/color-hooks-1.8.0.tgz#534282dc06082c0e440fb522c7d3853c44a4049e"
   integrity sha512-ie1IoilIaU8XBtmXOLYymBVrahLety3da+vP9CNMFL2T6fP4i4ReKGxzvRNPTwVrgpfESVI2o5I60Y/vB1r0Ww==
   dependencies:
@@ -1404,7 +1420,7 @@
     rgb-hex "^2.1.0"
 
 "@react-vertex/core@^2.9.0":
-  version "2.8.0"
+  version "2.9.0"
   resolved "https://registry.yarnpkg.com/@react-vertex/core/-/core-2.9.0.tgz#da7c60b8e597da44dfddf601b9f1afec2c5fd619"
   integrity sha512-fBIUn+tuLvqBkNgEpI+AY1cxbHVEty5irjnq1/BmwQQ9HWI5AEjCJkI5uY+ajOKXtqXgTUEDHahZ7hZwX7y83g==
   dependencies:
@@ -1417,7 +1433,7 @@
     warning "^4.0.3"
 
 "@react-vertex/dom-hooks@^1.11.0":
-  version "1.10.0"
+  version "1.11.0"
   resolved "https://registry.yarnpkg.com/@react-vertex/dom-hooks/-/dom-hooks-1.11.0.tgz#7a4bffaad65250529ce4079e9d21fc2aae8c0193"
   integrity sha512-thlORE37xQqSnmn9qxIi0K3OA860ayELom3NcknXksugAV8ZUQjJWXF8muvhLKcyCOTpi5Gsk9x77sfCpEqfAA==
   dependencies:
@@ -5013,6 +5029,11 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
+fullpage.js@^4.0.19:
+  version "4.0.19"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-4.0.19.tgz#39f00e30171eb0eef01503d9bddbd7009489fdfe"
+  integrity sha512-iDbxKEU4mpeoYJzsW+P0B+EK7586mNpBjES01U/QWh5FbDY8r1EqZPrGPciZVZHdJoz6zUze5q/PGOc4SQoqow==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -7295,9 +7316,9 @@ minimatch@3.0.4, minimatch@^3.0.4, minimatch@~3.0.2:
     brace-expansion "^1.1.7"
 
 minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
+  integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
 mississippi@^3.0.0:
   version "3.0.0"
@@ -9278,7 +9299,7 @@ quote-stream@^1.0.1, quote-stream@~1.0.2:
     minimist "^1.1.3"
     through2 "^2.0.0"
 
-raf@^3.4.1:
+raf@^3.4.0, raf@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
@@ -11187,6 +11208,14 @@ typescript@^3.8.3:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+
+typewriter-effect@^2.13.1:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/typewriter-effect/-/typewriter-effect-2.19.0.tgz#396fe35e1313279ae6202775bf8dff5db37c5b64"
+  integrity sha512-rhUX1ukmAXNFWUnMFx8CDU1uLWJQ7pRYzDU7WfHJRq43i6SmWSP9vFiUsOGfXINodUAgZiJ5xnzwLciHxZDGDg==
+  dependencies:
+    prop-types "^15.6.2"
+    raf "^3.4.0"
 
 uglify-js@3.4.x:
   version "3.4.10"
